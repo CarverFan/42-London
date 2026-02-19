@@ -11,10 +11,12 @@
 #	the function list()
 
 def find_the_redheads(dict):
-	nlist = []
+	#nlist = []
 	out = list(filter(lambda item: "red" in item[1], dict.items()))
-	for i in out:
-		nlist.append(i[0])
+	#for i in out:
+	#	nlist.append(i[0])
+	# replace the above loop with a list comprehension
+	nlist = [n[0] for n in out]
 	return nlist
 
 dupont_family = {
