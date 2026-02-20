@@ -21,5 +21,6 @@ persons = {
 	"fifi": "brindacier"
 }
 
+print()
 print(array_of_names(persons))
-
+print()
