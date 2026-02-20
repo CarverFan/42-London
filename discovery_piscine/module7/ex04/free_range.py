@@ -19,7 +19,10 @@ if len(sys.argv) != 3:
 else:
 	first = int(sys.argv[1])
 	second = int(sys.argv[2])
-	for i in range(first, second + 1):
-		arr.append(i)
-	print(arr)
+	if first >= second:
+		print("First number should be smaller than the second.")
+	else:
+		for i in range(first, second + 1):
+			arr.append(i)
+		print(arr)
 
