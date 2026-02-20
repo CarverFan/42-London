@@ -11,6 +11,7 @@ seen = set()
 
 for val in arr1:
 	if val > 5:
+		# The line below isn't necessary as sets won't allow duplicates
 		if val not in seen:
 			seen.add(val + 2)
 
