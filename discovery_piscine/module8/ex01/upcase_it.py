@@ -7,14 +7,9 @@
 #	Test the method by calling it in your program. In the example below, we test it
 #	with "hello".
 
-import sys
 
 def upcase_it(text):
-	print(text.upper())
+	up = text.upper()
+	return up
 
-if len(sys.argv) == 2:
-	text = sys.argv[1]
-	upcase_it(text)
-else:
-	print("none")
-
+print(upcase_it("hello"))
