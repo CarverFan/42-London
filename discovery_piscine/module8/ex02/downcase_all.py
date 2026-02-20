@@ -10,12 +10,13 @@
 
 import sys
 
-def downcase_it(text):
-	print(text.lower())
+def downcase_it(el):
+	elow = el.lower()
+	return elow
 
 if len(sys.argv) >= 2:
-	for text in sys.argv[1:]:
-		downcase_it(text)
+	for el in sys.argv[1:]:
+		print(downcase_it(el))
 else:
 	print("none")
 
