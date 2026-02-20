@@ -13,6 +13,7 @@ import sys
 if len(sys.argv) <= 1:
 	print("none")
 else:
+	print("parameters: ", len(sys.argv) -1)
 	for word in range(1, len(sys.argv)):
 		print(sys.argv[word], end=": ")
 		print(len(sys.argv[word]))
