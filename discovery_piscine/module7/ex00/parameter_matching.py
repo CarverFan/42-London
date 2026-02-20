@@ -14,12 +14,14 @@
 
 import sys, re
 
+print("What was the parameter?", end=" ")
+param = input()
+
 if len(sys.argv) != 2:
 	print("none")
 else:
 	attempt = sys.argv[1]
-	secret = "Hello"
-	if attempt == secret:
+	if attempt == param:
 		print("Good job!")
 	else:
 		print("Nope, sorry...")
